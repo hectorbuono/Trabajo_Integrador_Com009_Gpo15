@@ -16,5 +16,5 @@ Héctor Buono
 
 Se entrega:   
 Un Diagrama de clases  
-El código de las clases  
-Un DER para la Base de Datos
+El código de las clases (falta) 
+Un DER para la Base de Datos(falta)
