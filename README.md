@@ -14,7 +14,10 @@ Héctor Buono
 
 Ésta, constituye la primera entrega del trabajo integrador del curso de Desarrollador Intermedio en Java.  
 
+
+Nacho y Nahuel. Estamos trabajando pero no llegamos a la entrega. 
+
 Se entrega:   
-Un Diagrama de clases  
+Un Diagrama de clases(Falta)  
 El código de las clases (falta)   
-Un DER para la Base de Datos(falta)
+Un DER para la Base de Datos (Lo entregamos pero sabemos que hay que modificarlo)
