@@ -1,15 +1,18 @@
 package org.Trabajo_Integrador;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.*;
 
 public class cliente {
 
     public static void main(String[] args) throws SQLException {
         // Obtener la conexión
-        Connection conexion = conexionBD.obtenerConexion();
+        Connection conexion_BD = conexionBD.obtenerConexion();
 
-        Statement stmt= conexion.createStatement();
+        Statement stmt= conexion_BD.createStatement();
 
         ResultSet rs=stmt.executeQuery("select * from cliente");
 
