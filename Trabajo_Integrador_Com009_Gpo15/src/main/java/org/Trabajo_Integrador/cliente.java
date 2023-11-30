@@ -7,7 +7,7 @@ public class cliente {
 
     public static void main(String[] args) throws SQLException {
         // Obtener la conexión
-        Connection conexion = ConexionBD.obtenerConexion();
+        Connection conexion = conexionBD.obtenerConexion();
 
         Statement stmt= conexion.createStatement();
 
@@ -21,6 +21,6 @@ public class cliente {
 
 
         // Cerrar la conexión cuando hayas terminado
-        ConexionBD.cerrarConexion();
+        conexionBD.cerrarConexion();
     }
 }
