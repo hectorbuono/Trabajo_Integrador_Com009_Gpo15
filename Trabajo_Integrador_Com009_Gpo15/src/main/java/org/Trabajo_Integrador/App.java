@@ -6,13 +6,10 @@ public class App {
 
     public static void main(String[] args) {
         // Obtener la conexión
-        Connection conexion = conexionBD.obtenerConexion();
-
-        // Realizar operaciones con la base de datos si es necesario
-        // ...
-
-        // Cerrar la conexión cuando hayas terminado
-        ConexionBD.cerrarConexion();
+        conexionBD conexion_BD = new conexionBD();
+        ;
+        gestorBD gestor_BD = new gestorBD(conexion_BD);
+        gestor_BD.listarTablaPorTeclado();
     }
-}
 
+}
