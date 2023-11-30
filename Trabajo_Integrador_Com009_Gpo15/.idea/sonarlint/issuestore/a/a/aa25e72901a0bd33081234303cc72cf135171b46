@@ -1,0 +1,11 @@
+
+j
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(°Ç‘üÿÿÿÿ8Àú·ÜÁ1
+G	java:S106"+Replace this use of System.out by a logger.(çÔ¦8Çú·ÜÁ1
+K
+java:S2115")Add password protection to this database.(°Ç‘üÿÿÿÿ8ûÈ‚ßÁ1
+G	java:S106"+Replace this use of System.out by a logger.(Ù¢Ëª8Éú·ÜÁ1
+L	java:S106"+Replace this use of System.err by a logger.(÷²Òáûÿÿÿÿ8Êú·ÜÁ1
+F	java:S106"+Replace this use of System.err by a logger.(î¸Y8Ëú·ÜÁ1
+F	java:S106$"+Replace this use of System.out by a logger.(°ïü_8Ìú·ÜÁ1
+G	java:S106'"+Replace this use of System.err by a logger.(£Ş«8Íú·ÜÁ1
