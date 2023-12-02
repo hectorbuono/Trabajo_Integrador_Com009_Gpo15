@@ -44,4 +44,6 @@ public class conexionBD {
             System.err.println("Error al cerrar la conexión: " + e.getMessage());
         }
     }
+
+
 }
