@@ -6,14 +6,14 @@
       <DefaultEngine>InnoDB</DefaultEngine>
       <ServerVersion>10.4.28</ServerVersion>
     </root>
-    <schema id="2" parent="1" name="incidentes">
-      <Current>1</Current>
-      <IntrospectionTimestamp>2023-12-02.07:40:16</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-12-02.13:40:16</LocalIntrospectionTimestamp>
-      <CollationName>utf8mb4_general_ci</CollationName>
-    </schema>
-    <schema id="3" parent="1" name="information_schema">
+    <schema id="2" parent="1" name="information_schema">
       <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="3" parent="1" name="incidentes">
+      <Current>1</Current>
+      <IntrospectionTimestamp>2023-12-03.08:57:09</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-12-03.14:57:09</LocalIntrospectionTimestamp>
+      <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="4" parent="1" name="mysql">
       <CollationName>utf8mb4_general_ci</CollationName>
@@ -27,179 +27,19 @@
     <schema id="7" parent="1" name="test">
       <CollationName>latin1_swedish_ci</CollationName>
     </schema>
-    <table id="8" parent="2" name="cliente">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
-    </table>
-    <table id="9" parent="2" name="incidentes">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
-    </table>
-    <table id="10" parent="2" name="tecnico">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
-    </table>
-    <table id="11" parent="3" name="ALL_PLUGINS">
+    <table id="8" parent="2" name="ALL_PLUGINS">
       <Engine>Aria</Engine>
       <Options>max_rows
 9441</Options>
       <System>1</System>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="12" parent="3" name="APPLICABLE_ROLES">
+    <table id="9" parent="2" name="APPLICABLE_ROLES">
       <Engine>MEMORY</Engine>
       <Options>max_rows
 17137</Options>
       <System>1</System>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <column id="13" parent="8" name="id_cliente">
-      <AutoIncrement>4</AutoIncrement>
-      <DasType>int(11)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="14" parent="8" name="cuit_cliente">
-      <DasType>bigint(11)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="15" parent="8" name="razon_social_cliente">
-      <DasType>varchar(30)|0s</DasType>
-      <Position>3</Position>
-    </column>
-    <index id="16" parent="8" name="PRIMARY">
-      <ColNames>id_cliente</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="17" parent="8" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="18" parent="9" name="id_incidente">
-      <AutoIncrement>3</AutoIncrement>
-      <DasType>int(10)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="19" parent="9" name="nro_incidente">
-      <DasType>int(10)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="20" parent="9" name="tipo_incidente">
-      <DasType>varchar(30)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="21" parent="9" name="titulo_incidente">
-      <DasType>varchar(30)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="22" parent="9" name="descripcion_incidente">
-      <DasType>varchar(300)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <column id="23" parent="9" name="tecnico">
-      <DasType>int(11)|0s</DasType>
-      <Position>6</Position>
-    </column>
-    <column id="24" parent="9" name="estado_incidente">
-      <DasType>int(11)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>7</Position>
-    </column>
-    <column id="25" parent="9" name="fecha_registro_incidente">
-      <DasType>date|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>8</Position>
-    </column>
-    <column id="26" parent="9" name="hora_registro_cliente">
-      <DasType>time|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>9</Position>
-    </column>
-    <column id="27" parent="9" name="entrada_tiempo">
-      <DasType>int(11)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>10</Position>
-    </column>
-    <column id="28" parent="9" name="complejidad_incidente">
-      <DasType>int(11)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>11</Position>
-    </column>
-    <column id="29" parent="9" name="especialidad_incidente">
-      <DasType>int(11)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>12</Position>
-    </column>
-    <column id="30" parent="9" name="cuit_cliente">
-      <DasType>int(11)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>13</Position>
-    </column>
-    <column id="31" parent="9" name="razon_social_cliente">
-      <DasType>varchar(30)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>14</Position>
-    </column>
-    <column id="32" parent="9" name="servicios_cliente">
-      <DasType>varchar(45)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>15</Position>
-    </column>
-    <index id="33" parent="9" name="PRIMARY">
-      <ColNames>id_incidente</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="34" parent="9" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="35" parent="10" name="id_tecnico">
-      <DasType>int(11)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="36" parent="10" name="nombre_tecnico">
-      <DasType>varchar(30)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="37" parent="10" name="especialidad_tecnico">
-      <DasType>varchar(30)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="38" parent="10" name="fecha_contratacion">
-      <DasType>date|0s</DasType>
-      <Position>4</Position>
-    </column>
-    <column id="39" parent="10" name="fecha_cumpleanos_tecnico">
-      <DasType>date|0s</DasType>
-      <Position>5</Position>
-    </column>
-    <column id="40" parent="10" name="nivel_tecnico">
-      <DasType>int(2)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-    </column>
-    <index id="41" parent="10" name="PRIMARY">
-      <ColNames>id_tecnico</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="42" parent="10" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
   </database-model>
 </dataSource>
