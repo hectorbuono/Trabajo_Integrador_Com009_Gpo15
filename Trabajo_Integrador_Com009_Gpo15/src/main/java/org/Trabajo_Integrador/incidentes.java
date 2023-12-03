@@ -25,7 +25,7 @@ public class incidentes {
     @Column(name = "tipo_incidente", nullable = false, length = 3)
     private Integer tipo_incidente;
 
-    @Column(name = "tipo_incidente", nullable = false, length = 3)
-    private Integer tipo_incidente;
+    @Column(name = "titulo_incidente", nullable = false, length = 50)
+    private String titulo_incidente;
 
 }
