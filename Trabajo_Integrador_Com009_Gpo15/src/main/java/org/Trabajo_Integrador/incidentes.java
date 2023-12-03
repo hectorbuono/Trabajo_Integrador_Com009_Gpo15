@@ -28,4 +28,7 @@ public class incidentes {
     @Column(name = "titulo_incidente", nullable = false, length = 50)
     private String titulo_incidente;
 
+    @Column(name = "descripcion_incidente", nullable = false, length = 300)
+    private String descripcion_incidente;
+
 }
